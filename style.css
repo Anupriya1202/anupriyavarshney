@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow: #3aadbd;
+    --yellow: rgb(44, 105, 116);
 }
 
 *{
@@ -16,14 +16,16 @@
 
 *::selection{
     background:var(--yellow);
-    color: #333;
+    color: #444;
 }
 
-.link { color: #3aadbd; }
+.link { color: var(--yellow); }
+.link:visited { color: var(--yellow); }
 .link:hover { color: #eee; }
 
 .link2 { color: #eee; }
-.link2:hover { color: #3aadbd; }
+.link2:visited { color: #eee; }
+.link2:hover { color: var(--yellow); }
 
 html{
     font-size: 62.5%;
@@ -56,11 +58,11 @@ section{
 
 .btn{
     padding:.5rem 2rem;
-    background: #333;
+    background: var(--yellow);
     color: #fff;
     cursor: pointer;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 5rem;
 }
 
@@ -70,7 +72,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--yellow);
+    background: #333;
 }
 
 .heading{
@@ -131,19 +133,19 @@ header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #333;
+    background: rgb(65, 121, 143);
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
 }
 
 header .navbar ul li a:hover{
-    background:var(--yellow);
+    background: #444;
 }
  #menu{
      position: fixed;
      top: 2rem; right: 2rem;
-     background: #333;
+     background: #444;
      color: #fff;
      cursor: pointer;
      font-size: 2.5rem;
@@ -157,26 +159,30 @@ header .navbar ul li a:hover{
      justify-content: center;
      flex-flow: column;
      padding: 0 15rem;
-
+     text-align: justify;
  }
 
  .home h3{
      font-size: 2.5rem;
      color: #fff;  
+     text-align: justify;
  }
 
  .home h1{
     font-size: 5rem;
-    color: #fff;  
+    color: #fff; 
+    text-align: justify; 
 }
 
 .home h1 span{
     color:var(--yellow);
+    text-align: justify;
 }
 .home p{
     font-size: 2rem;
     color: #eee; 
     padding: 1rem 0;
+    text-align: justify;
 }
 
 .about .row{
@@ -378,7 +384,7 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding: 1.5rem;
     margin: 1rem 0;
-    background: #333;
+    background: var(--yellow);
     color: #fff;
     text-transform: none;
     font-size: 1.7rem;
@@ -402,7 +408,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: #eee;
+    color: #fff;
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -414,6 +420,10 @@ header .navbar ul li a:hover{
 
 .contact .row form .box::placeholder{
     text-transform: capitalize;
+}
+
+::placeholder { 
+    color: #fff;
 }
 
 .top{
