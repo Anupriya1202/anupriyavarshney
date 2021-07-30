@@ -23,7 +23,7 @@
 .link:visited { color: var(--yellow); }
 .link:hover { color: #eee; }
 
-.link2 { color: #eee; }
+.link2 { color: #eee; text-decoration: underline; }
 .link2:visited { color: #eee; }
 .link2:hover { color: var(--yellow); }
 
@@ -142,6 +142,7 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background: #444;
 }
+
  #menu{
      position: fixed;
      top: 2rem; right: 2rem;
@@ -176,8 +177,8 @@ header .navbar ul li a:hover{
 
 .home h1 span{
     color:var(--yellow);
-    
 }
+
 .home p{
     font-size: 2rem;
     color: #eee; 
@@ -214,6 +215,7 @@ header .navbar ul li a:hover{
 .about .row .info p span{
     color: var(--yellow);
     padding: 0 .3rem;
+    text-decoration: underline;
 }
 
 .about .row .info h3{
@@ -246,6 +248,7 @@ header .navbar ul li a:hover{
    color: #fff;
    border-radius: 5rem;
    padding: .5rem 2.5rem; 
+   
 }
 
 .education .box-container .box h3{
