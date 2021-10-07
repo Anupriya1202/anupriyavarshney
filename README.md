@@ -2,4 +2,4 @@
 
 This is my E-portfolio website!
 
-https://anupriya-varshney-personal-projects.github.io/AnupriyaVarshneyPortfolio/
+https://anupriya1202.github.io/anupriyavarshney/
