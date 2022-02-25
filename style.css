@@ -207,7 +207,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info p span{
-    color: var(--yellow);
+    color: #3aadbd;
     padding: 0 .3rem;
 }
 
